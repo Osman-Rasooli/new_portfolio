@@ -1,0 +1,63 @@
+@import "vars.css";
+
+
+body {
+	background-color: black;
+	margin: 0;
+	font-family: sans-serif;
+	letter-spacing: -0.1ch;
+	line-height: 1;
+	overflow: overlay;
+}
+
+body::-webkit-scrollbar-track {
+	pointer-events: none;
+	background: linear-gradient(to bottom, transparent, var(--scroll-color) 1px) no-repeat center / 1px 90%;
+}
+
+body::-webkit-scrollbar {
+	width: 100px;
+	height: 100%;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: var(--scroll-design);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+	--color: red;
+}
+
+[hidden] {
+	display: none;
+}
+
+body {
+	cursor: var(--cursor-dark);
+}
+
+[cursor]:hover {
+	cursor: var(--cursor-dark-hover);
+}
+
+bg-white [cursor] {
+	cursor: var(--cursor);
+}
+
+bg-white [cursor]:hover {
+	cursor: var(--cursor-hover);
+}
+
+bg-white {
+	background: white;
+	display: flex;
+	cursor: var(--cursor);
+	flex-direction: column;
+	width: 100%;
+}
+
+bg-black {
+	background-color: black;
+	display: flex;
+	position: relative;
+}
