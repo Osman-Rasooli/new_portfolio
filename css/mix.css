@@ -1,0 +1,73 @@
+css-mix {
+    --mix-height: calc(var(--base) * 8);
+    display: grid;
+    grid-template-areas: 'center';
+    height: var(--mix-height);
+    width: 100%;
+    justify-content: center;
+    place-items: flex-start;
+    font-size: calc(var(--base) * 0.7);
+    aspect-ratio: 16/9;
+}
+
+/* css-mix:before {
+    content: '';
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, black, transparent, black 30%) no-repeat center/cover;
+} */
+
+mix-text {
+    grid-area: center;
+    font-weight: bold;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: var(--gradient-alternate);
+    background-attachment: fixed;
+    aspect-ratio: 16/9;
+    position: sticky;
+    top: var(--base);
+    display: grid;
+    place-content: center;
+    z-index: 0;
+    margin-bottom: var(--base);
+    mix-blend-mode: hard-light;
+    line-height: 2;
+}
+
+.mix-text-sm {
+    font-size: calc(var(--base) * 0.4);
+    text-align: center;
+    font-weight: 600;
+}
+
+mix-bg {
+    grid-area: center;
+    width: var(--base);
+    height: 100%;
+    flex: 1;
+    justify-self: center;
+    transform: rotate(30deg) translateX(-1ch);
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    top: 0;
+    filter: blur(20px);
+    background-image: linear-gradient(to right, 
+    transparent, 
+    black, 
+    black, 
+    transparent, 
+    black, 
+    transparent, 
+    white,
+    white, 
+    transparent, 
+    black, 
+    transparent);
+}

@@ -1,0 +1,26 @@
+
+css-stripes {
+    --base: 24vmin;
+    --width: calc(var(--base) * 4);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    width: var(--width);
+    height: 200vh;
+    padding-top: var(--base);
+}
+
+css-stripe {
+    background: url(../img/osman.png);
+    filter: grayscale(1);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: calc(var(--base) * 4 );
+    transition: var(--transition);
+}
+
+/* css-stripe:hover {
+    transform: scale(1) skewX(-10deg);
+    background-position: center -20px;
+} */

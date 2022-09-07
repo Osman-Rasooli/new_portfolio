@@ -12,7 +12,7 @@
 	--cursor-dark-hover: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3C/svg%3E") 20 0, auto;
 	--pattern-color: rgba(255, 255, 255, 0.1);
 	--pattern: linear-gradient(to bottom, black 50%, transparent) no-repeat fixed center top/auto calc(var(--base) * 2), radial-gradient(var(--pattern-color) 1px, transparent 0) 0 0 / 40px 40px, radial-gradient(var(--pattern-color) 1px, transparent 0) 20px 20px / 40px 40px;
-    --scroll-color: rgba(255, 255, 255, 0.1);
+  --scroll-color: rgba(255, 255, 255, 0.1);
 	--scroll-design: radial-gradient(farthest-side, transparent calc(90% - 6px), var(--scroll-negative), transparent, var(--scroll-positive), transparent) no-repeat center / 20px 20px, linear-gradient(to bottom, transparent, var(--scroll-color) 4px) no-repeat center / 4px 120%, radial-gradient(farthest-side, transparent calc(90% - 2px), var(--scroll-color), transparent) no-repeat center/40px 40px, radial-gradient(farthest-side, white calc(90% - 12px), transparent) no-repeat center/6px 6px;
 }
 
