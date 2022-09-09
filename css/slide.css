@@ -72,8 +72,12 @@ horizontal-slide::-webkit-scrollbar {
       height: 150px;
       margin: 40px auto 0;
       cursor: var(--cursor-dark-hover);
-    }
-    
+}
+
+.download-link {
+    cursor: var(--cursor-dark-hover);
+}
+
 .i{
     position: absolute;
     top: 50%;
