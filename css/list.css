@@ -1,0 +1,83 @@
+
+stick-list {
+    display: flex;
+    width: 100%;
+    max-width: 60vw;
+    margin: 0 auto;
+    color: white;
+    flex-direction: column;
+    line-height: 1.38;
+    position: relative;
+    margin-bottom: 40vh;
+}
+
+stick-letter {
+    font-weight: bold;
+    font-size: var(--base);
+    top: var(--base);
+    position: sticky;
+    height: min-content;
+    margin-right: var(--base);
+    max-width: 2ch;
+}
+
+stick-item {
+    margin-top: var(--base);
+    display: flex;
+}
+
+stick-content {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 1000px;
+    flex-wrap: wrap;
+}
+
+stick-title {
+    font-weight: bold;
+    font-size: calc(var(--base) * 0.8);
+}
+
+stick-text {
+    max-width: 500px;
+    min-height: 280px;
+}
+
+stick-title,
+stick-text {
+    background: var(--gradient-alternate);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.flex {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.logo-3 {
+    justify-content: space-around;
+}
+
+.logo-container span {
+    display: block;
+    padding: 5px 25px;
+    border-radius: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-image: var(--gradient-border);
+    border-image-slice: 1;
+    flex: 1;
+    text-align: center;
+}
+
+.logo-container span:not(:last-child) {
+    margin-right: 20px;
+}
+
+

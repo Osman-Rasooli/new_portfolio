@@ -4,6 +4,7 @@
 	--cubic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	--gradient: linear-gradient(-45deg, #ffa63d, #ff3d77, #b933f9, #5f19dd);
 	--gradient-alternate: linear-gradient(to bottom, #ffa63d, #ff3d77, #b933f9, #5f19dd, rgb(98 212 33 / 0%) 100%);
+  --gradient-border: linear-gradient(to bottom right,#ff3d77, #b933f9, #5f19dd, rgb(98 212 33 / 0%) 100%);
 	--scroll-negative: black;
 	--scroll-positive: white;
 	--cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='black'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3C/svg%3E") 20 0, auto;
