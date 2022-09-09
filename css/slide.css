@@ -56,8 +56,110 @@ span.aboutMe {
     display: inline-block;
     padding: 8px 15px;
     border-radius: 3px;
+    cursor: var(--cursor-dark-hover);
 }
 
 horizontal-slide::-webkit-scrollbar {
     appearance: none;
+}
+
+/* LIQUID BUTTON */
+
+.button{
+    /*   border:1px solid red; */
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin: 40px auto 0;
+      cursor: var(--cursor-dark-hover);
+    }
+    
+.i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    z-index: 10;
+    color: white;
+    letter-spacing: .4ch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download-icon {
+    margin-top: 10px;
+    color: white;
+}
+
+/* You can experiment with different transition times and cubic-beziers to create your own effect */
+.blurred{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    filter: url(#goo);
+    background-color: black;
+}
+.blurred::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    border-radius: 100%;
+    /* transition:1.6s; */
+    transition: .7s cubic-bezier(0,2,.61,-0.05);
+}
+.blurred::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    border-radius: 100%;
+   /* transition:0.6s; */
+    transition: 1s cubic-bezier(0,2,.61,-0.05);
+}
+.blurred > span:nth-of-type(1),
+.blurred > span:nth-of-type(2){
+    position:absolute;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    left: 0;
+    background-color: black;
+    border-radius: 100%;
+    /* transition:0.2s; */
+    transition: .8s cubic-bezier(0,2,.61,-0.05);
+}
+.button:hover .blurred::before{
+    width: 140px;
+    height: 140px;
+    top: 50%;
+    left: 50%;
+}
+.button:hover .blurred::after{
+    width: 25px;
+    height: 25px;
+    top: -30px;
+    left: 55px;
+}
+
+.button:hover .blurred > span:nth-of-type(1){
+    width: 80px;
+    height: 80px;
+    top: -12px;
+    left: -21px;
+}
+.button:hover .blurred > span:nth-of-type(2){
+    width: 65px;
+    height: 65px;
+    top: 60px;
+    left: -78px;
 }

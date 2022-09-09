@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <css-mix >
+    <css-mix hidden>
         <mix-text style="text-align: center">Osman Rasooli <div class="mix-text-sm">a full stack web developer</div></mix-text>
        <mix-bg></mix-bg>
     </css-mix>
-    <section style="height: 400px;"></section>
+    <section hidden style="height: 400px;"></section>
     <main>
         <!-- The designer of your success -->
         <bg-white>
@@ -27,7 +27,33 @@
                     <slide-item s1></slide-item>
                     <slide-item s2>
                         <div style="width: 100vw;">
-                            <p style="text-align: center;" class="mix-text-sm">a professional Web Developer with <span class="aboutMe">UI / UX</span> and <span class="aboutMe">back-end</span> development skills to create delightful experience.</p>
+                            <p style="text-align: center;" class="mix-text-sm">a professional Web Developer with <span class="aboutMe cursor-white">UI / UX</span> and <span class="aboutMe">back-end</span> development skills to create delightful experience.
+                                <a href="./assets/Resume.pdf" download="Resume">
+                                    <div class="button">
+                                        <span class="i">Resume
+                                            <i class="fa-solid fa-download download-icon" ></i>
+                                        </span>
+                                        <div class="blurred">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <svg>
+                                    <defs>
+                                     <filter id='goo'>
+                                      <feGaussianBlur in='SourceGraphic' 
+                                      stdDeviation='10' result='name'/>
+                                       <feColorMatrix in='name' mode='matrix'
+                                           values='1 0 0 0 0
+                                                   0 1 0 0 0 
+                                                   0 0 1 0 0
+                                                   0 0 0 30 -15 ' result='aab'/>
+                                       <feBlend in='SourceGraphic' in2='aab'/>
+                                      </filter>
+                                    </defs>
+                                   </svg>
+                            </p>
                         </div>
                     </slide-item>
                 </horizontal-slide>
@@ -39,6 +65,7 @@
     <!-- Fix Scroll Snap -->
     <!-- Add liquid download cv button -->
 
+    <script src="https://kit.fontawesome.com/4e50d35c46.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
