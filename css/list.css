@@ -11,7 +11,7 @@ stick-list {
     margin-bottom: 40vh;
 }
 
-stick-list > h1 {
+.section-title {
     position: absolute;
     font-size: calc(var(--base) * 1.2);
     color: rgba(255, 255, 255, .25);

@@ -1,4 +1,14 @@
 
+section.projects {
+    height: 200px;
+}
+section.projects h1 {
+    font-size: calc(var(--base));
+    color: rgba(255, 255, 255, .25);
+    letter-spacing: .7ch;
+    text-transform: uppercase;
+    text-align: center;
+}
 
 css-gallery {
     display: grid;
@@ -51,6 +61,7 @@ gallery-item > * {
     top: calc(var(--nr-top) + 10vmin);
 }
 
+
 gallery-item::after {
     content: '0' counter(gallery) " ";
     display: flex;
@@ -79,6 +90,8 @@ gallery-desc {
     background: rgba(200, 200, 200, .2);
     box-shadow: none;
     backdrop-filter: blur(10px);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     position: absolute;
     width: 40%;
     height: 100%;
@@ -90,9 +103,61 @@ gallery-desc {
     box-sizing: border-box;
     align-items: center;
     padding: 10px;
-    padding-left: 20px;
+    padding-left: 30px;
+    transition: var(--transition);
 }
 
+
+gallery-desc h1 {
+    font-size: calc(var(--base) / 5);
+    letter-spacing: 0.4ch;
+}
+
+gallery-desc p {
+    line-height: 1.5;
+    font-size: 120%;
+    letter-spacing: .09ch;
+}
+
+gallery-desc p span {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 80%;
+}
+
+.links-container {
+    display: flex;
+    width: 70%;
+    margin: 10px auto 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links-container a:link,
+.links-container a:visited {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* pointer-events: none; */
+    cursor: none;
+    display: inline-block;
+    padding: 5px 30px;
+    border-radius: 15px;
+    border: 1px solid white;
+    transition: var(--transition);
+    font-size: 90%;
+}
+
+.links-container a:hover {
+    background-color: white;
+    color: black;
+    cursor: var(--cursor);
+}
+
+.links-container i {
+    margin-right: 10px;
+}
 
 [g1] {
     --rotate: -4deg;
@@ -141,13 +206,4 @@ css-gallery::after {
 
 [wide]:checked ~ gallery-item gallery-desc {
     display: flex;
-}
-
-@keyframes animate-gallery {
-    0% {
-        gallery-desc {
-            width: 0;
-
-        }
-    }
 }
