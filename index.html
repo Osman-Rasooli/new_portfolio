@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <css-mix >
+    <css-mix hidden>
         <mix-text style="text-align: center">Osman Rasooli <div class="mix-text-sm">a full stack web developer</div></mix-text>
        <mix-bg></mix-bg>
     </css-mix>
     <section  style="height: 400px;"></section>
     <main >
         <!-- The designer of your success -->
-        <bg-white >
+        <bg-white hidden>
             <slide-wrapper>
                 <horizontal-slide >
                     <slide-item s0>
                         <div style="width: 100vw;">
-                            <h1 >Osman Rasooli</h1>
+                            <h1>Osman Rasooli</h1>
                             <h2 class="mix-text-sm">The designer of you success...</h2>
                         </div>
                     </slide-item>
@@ -59,7 +59,9 @@
                 </horizontal-slide>
             </slide-wrapper>
         </bg-white>
-        <stick-list>
+
+        <stick-list hidden>
+            <h1>SKILLS</h1>
             <stick-item>
                 <stick-letter>01</stick-letter>
                 <stick-content>
@@ -137,6 +139,19 @@
                 </stick-content>
             </stick-item>
         </stick-list>
+
+        <css-gallery>
+            <input type="checkbox" wide />
+            <gallery-item cursor g1>
+                <img src="./img/gallery-1.jpeg" alt="Image 1">
+            </gallery-item>
+            <gallery-item cursor g2>
+                <img src="./img/gallery-2.jpg" alt="Image 2">
+            </gallery-item>
+            <gallery-item cursor g3>
+                <img src="./img/gallery-1.jpeg" alt="Image 3">
+            </gallery-item>
+        </css-gallery>
     </main>
 
     <!-- Fix Scroll Snap -->
