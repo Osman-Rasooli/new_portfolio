@@ -5,6 +5,10 @@
 @import "list.css";
 @import "gallery.css";
 
+@font-face {
+	font-family: montsera;
+	src: url('../fonts/Montsera-Rp38l.ttf');
+}
 
 body {
 	background-color: black;
@@ -65,4 +69,14 @@ bg-black {
 	background-color: black;
 	display: flex;
 	position: relative;
+}
+
+.header {
+	font-family: montsera, sans-serif;
+	color: #aaa;
+	font-size: 50px;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	padding: 10px 40px;
 }
