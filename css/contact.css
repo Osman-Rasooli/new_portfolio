@@ -1,0 +1,48 @@
+
+footer {
+    position: relative;
+    color: white;
+    margin-top: calc(var(--base) * 1.2);
+    width: 100%;
+}
+
+footer h1.section-title {
+    display: flex;
+    width: 100%;
+    font-size: calc(var(--base) * 0.8);
+    color: rgba(255, 255, 255, .25);
+    letter-spacing: .7ch;
+    text-transform: uppercase; 
+    justify-content: center;
+    align-items: center;
+}
+
+contact {
+    padding-top: 10vh;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: linear-gradient(to right, black, rgba(0, 0, 0, .2) 80%, transparent), url('../img/contact-image.jpg') no-repeat top right;
+}
+
+contact form {
+    margin-left: 50px;
+}
+
+form p {
+    font-size: calc(var(--base) / 5);
+    line-height: 2;
+}
+
+form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 250px;
+    padding: 5px 40px;
+    color: white;
+    font-size: calc(var(--base) / 5);
+    text-align: center;
+}
