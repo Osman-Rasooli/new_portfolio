@@ -17,7 +17,20 @@ horizontal-slide {
     overflow-x: hidden;
     transform-origin: right top;
     transform: rotate(-90deg) translate3d(0, -100vh, 0);
+    position: relative;
 }
+
+bg-image{
+    position: absolute;
+    top: 3vh;
+    left: 0;
+    width: 98vw;
+    height: 97vh;
+    background: url(../img/osman.jpg) no-repeat top/cover;
+    background-blend-mode: darken(2);
+    clip-path: circle(120px at var(--x) var(--y));
+}
+
 
 slide-item {
     width: max-content;
@@ -33,7 +46,7 @@ slide-item {
     letter-spacing: -0.1ch;
 }
 
-[s0] { top: 30vh }
+[s0] { top: 30vh; }
 
 [s1] { 
     background: linear-gradient(to right, transparent, #f2f2f2 40%);
