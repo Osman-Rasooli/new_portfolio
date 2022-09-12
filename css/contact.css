@@ -18,8 +18,9 @@ footer h1.section-title {
 }
 
 contact {
-    padding-top: 10vh;
-    height: 550px;
+    padding-top: 8vh;
+    padding-bottom: 5vh;
+    height: 420px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -28,12 +29,14 @@ contact {
 }
 
 contact form {
-    margin-left: 50px;
+    margin-left: 100px;
+    max-width: calc(var(--base) * 5);
 }
 
 form p {
     font-size: calc(var(--base) / 5);
-    line-height: 2;
+    line-height: 2.5;
+    color: #ddd;
 }
 
 form input {
@@ -45,4 +48,127 @@ form input {
     color: white;
     font-size: calc(var(--base) / 5);
     text-align: center;
+    margin: 0 15px;
 }
+
+input[type=email] {
+    width: 320px;
+}
+
+::-webkit-input-placeholder {
+    color: #666;
+    font-size: 20px;
+}
+
+:-ms-input-placeholder {
+    color: #666;
+    font-size: 20px;
+}
+
+::placeholder {
+    color: #666;
+    font-size: 20px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+.form-btn {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #e3e3e3;
+    padding: 20px 40px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border: 4px solid #e3e3e3;
+    border-radius: 2px;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: var(--cursor);
+}
+
+.form-btn:before {
+    content: attr(data-title);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    background-color: #e3e3e3;
+    letter-spacing: 5px;
+    color: black;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: .3s;
+}
+
+.form-btn:hover:before {
+    top: 0;
+} 
+
+.copyright {
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    height: 80px;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+    transition: all .3s;
+}
+
+.social-links li a {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: .3s;
+    background-color: #e3e3e3;
+    overflow: hidden;
+    position: relative;
+    cursor: var(--cursor);
+}
+
+li a i {
+    transition: .3s;
+    display: block;
+    color: black;
+}
+
+.social-links li a i:last-child {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+
+.social-links li:hover a i:nth-child(2) {
+    transform: translateY(-80%);
+    cursor: none;
+    cursor: var(--cursor);
+}
+
+.social-links li:hover a i:nth-child(1) {
+    transform: translateY(-100%);
+    opacity: 0;

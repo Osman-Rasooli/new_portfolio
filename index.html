@@ -10,14 +10,14 @@
 <body>
     <div class="header">Osman Rasooli</div>
     <!-- <header>Osman Rasooli</header> -->
-    <css-mix >
+    <css-mix hidden>
         <mix-text style="text-align: center">Osman Rasooli <div class="mix-text-sm">a full stack web developer</div></mix-text>
        <mix-bg></mix-bg>
     </css-mix>
-    <section  style="height: 400px;"></section>
+    <section hidden style="height: 400px;"></section>
     <main >
         <!-- The designer of your success -->
-        <bg-white >
+        <bg-white hidden>
             <slide-wrapper>
                 <horizontal-slide >
                     <slide-item s0>
@@ -62,7 +62,7 @@
             </slide-wrapper>
         </bg-white>
 
-        <stick-list >
+        <stick-list hidden>
             <h1 class="section-title">SKILLS</h1>
             <stick-item>
                 <stick-letter>01</stick-letter>
@@ -142,11 +142,11 @@
             </stick-item>
         </stick-list>
 
-        <section class="projects">
+        <section hidden class="projects">
             <h1>Projects</h1>
         </section>
 
-        <css-gallery>
+        <css-gallery hidden>
             <input type="checkbox" wide checked/>
             <gallery-item cursor g1>
                 <img src="./img/gallery-1.jpeg" alt="Image 1">
@@ -183,11 +183,34 @@
         <contact>
             <form action="#">
                 <p>Hey, My name is <input type="text" name="name" id="name" placeholder="John Doe"> and I'm looking for <input type="text" name="subject" id="subject" placeholder="Web Design">.<br/>
-                    Get in touch with me at <input type="email" name="email" id="email" placeholder="john@example.com">
+                    Get in touch with me at <input type="email" name="email" id="email" placeholder="john@example.com">.
                 </p>
-                <input type="submit" value="Send Inquiry">
+                <a class="form-btn" href="#" data-title="Hire Me">Send Inquiry</a>
             </form>
         </contact>
+        <div class="copyright">
+            <ul class="social-links">
+                <li>
+                    <a href="https://www.instagram.com/osmanrasooli1973" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/mohammad-osman-rasooli-420228192/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Osman-Rasooli" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>&copy; 2022, Built and designed by <span class="copyright-name">Osman Rasooli</span></p>
+        </div>
     </footer>
 
     <!-- Fix Scroll Snap -->
