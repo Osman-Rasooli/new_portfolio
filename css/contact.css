@@ -117,7 +117,7 @@ form input:focus {
     justify-content: space-between;
     align-items: center;
     max-width: 800px;
-    height: 80px;
+    height: 100px;
 }
 
 .social-links {
@@ -172,3 +172,18 @@ li a i {
 .social-links li:hover a i:nth-child(1) {
     transform: translateY(-100%);
     opacity: 0;
+}
+
+.copyright-name {
+    font-size: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 5px;
+    letter-spacing: 2px;
+    color: #e3e3e3;
+    text-decoration: none;
+    cursor: var(--cursor-dark-hover);
+    padding: 30px 0 20px;
+
+}
