@@ -1,0 +1,22 @@
+{
+  "name": "portfolio_new",
+  "version": "1.0.0",
+  "description": "My new modern portfolio",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Osman-Rasooli/new_portfolio.git"
+  },
+  "author": "Osman Rasooli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Osman-Rasooli/new_portfolio/issues"
+  },
+  "homepage": "https://github.com/Osman-Rasooli/new_portfolio#readme",
+  "dependencies": {
+    "jquery": "^3.6.1"
+  }
+}
