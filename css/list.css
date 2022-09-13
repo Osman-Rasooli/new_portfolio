@@ -96,6 +96,16 @@ stick-text {
 /* MEDIA QUIERIES */
 
 
+@media (min-width: 1440px) {
+    stick-text {
+        max-width: 700px;
+    }
+
+    stick-list {
+        max-width: 75vw;
+    }
+}
+
 @media (max-width: 1440px) {
     stick-title {
         font-size: calc(var(--base) * 0.5);
