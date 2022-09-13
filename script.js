@@ -1,4 +1,6 @@
 
+
+// Background Image position manipulator - AboutMe section
 var pos = document.documentElement;
 
 pos.addEventListener('mousemove', e => {
