@@ -41,9 +41,16 @@ slide-item {
     align-items: center;
     justify-content: center;
     position: sticky;
-    font-size: calc(var(--base) / 2);
+    /* font-size: calc(var(--base) / 3); */
+    font-size: 5vw;
     font-weight: bold;
     letter-spacing: -0.1ch;
+}
+
+@media (max-width: 1280px) {
+    [s0] {
+        top: 20vh;
+    }
 }
 
 [s0] { top: 30vh; }
