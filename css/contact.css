@@ -9,13 +9,16 @@ footer {
 footer h1.section-title {
     display: flex;
     width: 100%;
-    font-size: calc(var(--base) * 0.8);
+    font-size: calc(var(--base) * 0.5);
     color: rgba(255, 255, 255, .25);
     letter-spacing: .7ch;
     text-transform: uppercase; 
     justify-content: center;
     align-items: center;
+    left: 0;
 }
+
+
 
 contact {
     padding-top: 8vh;
@@ -28,6 +31,29 @@ contact {
     background: linear-gradient(to right, black, rgba(0, 0, 0, .2) 80%, transparent), url('../img/contact-image.jpg') no-repeat top right;
 }
 
+@media (max-width: 1440px) {
+    footer h1.section-title {
+        font-size: 7vw;
+    }
+
+    contact {
+        background-position: top right;
+    }
+
+    contact form {
+        width: 60vw;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    footer contact form {
+        margin-left: 50px;
+    }
+    footer contact form p {
+        font-size: calc(var(--base) / 6);
+    }
+}
 contact form {
     margin-left: 100px;
     max-width: calc(var(--base) * 5);
