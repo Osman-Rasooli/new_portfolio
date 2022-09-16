@@ -15,7 +15,7 @@ css-mix {
     width: 100%;
     justify-content: center;
     place-items: flex-start;
-    font-size: var(--base);
+    font-size: 10vw;
     aspect-ratio: 16 / 9;
     background: url(../img/osman2.png) no-repeat fixed center/500px;
     position: relative;
@@ -46,12 +46,18 @@ css-mix {
     background-attachment: fixed;
     aspect-ratio: 16 / 9;
     position: sticky;
-    top: calc(var(--base) * 0.5);
+    top: calc(var(--base) * 0.6);
     display: grid;
     place-content: center;
     z-index: 0;
     margin-bottom: var(--base);
     mix-blend-mode: hard-light;
+  }
+
+  @media (max-width:700px) {
+    mix-text {
+      top: calc(var(--base) * 1.1);
+    }
   }
   
   mix-bg {

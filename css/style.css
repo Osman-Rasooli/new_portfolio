@@ -21,6 +21,10 @@ body {
 	position: relative;
 }
 
+.preolaoder-scroll {
+	overflow: hidden;
+}
+
 body::-webkit-scrollbar-track {
 	pointer-events: none;
 	background: linear-gradient(to bottom, transparent, var(--scroll-color) 1px) no-repeat center / 1px 90%;
@@ -84,7 +88,7 @@ bg-black {
 }
 
 #preloader {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -114,3 +118,49 @@ bg-black {
 	mix-blend-mode: difference;
 	z-index: 1000000;
 }
+
+.hire-me {
+	display: inline-block;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 50%;
+	background-color: #ff3d77;
+	border: none;
+	position: fixed;
+	top: 50px;
+	left: 50px;
+	z-index: 10000;
+	transform: translate(-50%, -50%);
+	transition: all ease 2s;
+	color: black;
+}
+.hire-me::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #ff3d77;
+	z-index: -1;
+	transition: all ease 1s;
+	display: inline-block;
+	animation: hire-me 1s infinite;
+}
+
+@keyframes hire-me {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+
+/* .hire-me:hover::before {
+	transform: scale(2);
+	opacity: 0;
+} */

@@ -3,6 +3,7 @@ var beforeload = (new Date()).getTime();
 // Preloader
 $(function() {
     var count = 0;
+    $('body').toggleClass('preolaoder-scroll');
     // var loadTime = window.performance.timing.domContentLoadedEventEnd- window.performance.timing.navigationStart;
 
     // Finding Load Time
@@ -22,6 +23,8 @@ $(function() {
             $('#preloader').fadeOut(1500);
             $('.preloader').css('display', 'none');
             $('.count').css('display', 'none');
+            $('body').toggleClass('preolaoder-scroll');
+
         }
     }, seconds)
 });

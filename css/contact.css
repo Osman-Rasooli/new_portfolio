@@ -346,5 +346,15 @@ li a i {
         line-height: 30px;
         font-size: 20px;
     }
+    .social-links li:hover a i:nth-child(2) {
+        transform: translateY(-62%) translateX(-12%);
+        cursor: none;
+        cursor: var(--cursor);
+    }
+    
+    .social-links li:hover a i:nth-child(1) {
+        transform: translateY(-62%) translateX(-12%);
+        opacity: 0;
+    }
 
 }
