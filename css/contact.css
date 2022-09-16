@@ -15,7 +15,7 @@ footer h1.section-title {
     text-transform: uppercase; 
     justify-content: center;
     align-items: center;
-    margin-top: 110px;
+    margin-top: 130px;
     left: 0;
 }
 contact {
@@ -119,7 +119,7 @@ form input:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 800px;
+    width: 800px;
     height: 100px;
 }
 
@@ -191,6 +191,43 @@ li a i {
 
 }
 
+@media (min-width: 1600px) {
+    ::-webkit-input-placeholder {
+        color: #666;
+        font-size: 30px !important;
+    }
+    
+    :-ms-input-placeholder {
+        color: #666;
+        font-size: 30px !important;
+    }
+    
+    ::placeholder {
+        color: #666;
+        font-size: 30px !important;
+    }
+    .copyright {
+        width: 1200px;
+    }
+    .copyright p {
+        font-size: 24px;
+    }
+    .copyright .copyright-name {
+        font-size: 32px;
+    }
+}
+
+@media (max-width:1600px) and (min-width: 1024px) {
+    .copyright {
+        width: 880px;
+    }
+    .copyright p {
+        font-size: 20px;
+    }
+    .copyright .copyright-name {
+        font-size: 24px;
+    }
+}
 
 @media (max-width: 1440px) {
     footer h1.section-title {
@@ -233,6 +270,7 @@ li a i {
     form input {
         box-sizing: border-box;
         width: 200px;
+        font-size: calc(var(--base) / 6);
     } 
     input[type=email] {
         box-sizing: border-box;
@@ -240,19 +278,73 @@ li a i {
     }
     ::-webkit-input-placeholder {
         color: #666;
-        font-size: 16px;
+        font-size: 16px !important;
     }
     
     :-ms-input-placeholder {
         color: #666;
-        font-size: 16px;
+        font-size: 16px !important;
     }
     
     ::placeholder {
         color: #666;
-        font-size: 16px;
+        font-size: 16px !important;
     }
     .form-btn {
         margin-top: 16px;
+        font-size: 16px;
+        padding: 16px 32px;
     }
+    .form-btn:before {
+        font-size: 16px;
+        padding: 16px 32px;
+    }
+    .copyright {
+        width: 700px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .copyright {
+        max-width: 425px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-links {
+        padding-left: 0;
+    }
+}
+
+@media(max-width: 600px) {
+    contact form {
+        margin-left: 0 !important;
+    }
+    form input {
+        width: 90%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    input[type=email] {
+        box-sizing: border-box;
+        width: 90%;
+    }
+    .form-btn {
+        padding: 12px 32px;
+        font-size: 90%;
+        letter-spacing: 0;
+    }
+    .form-btn:before {
+        font-size: 90%;
+        padding: 12px 32px;
+    }
+    .social-links li a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+
 }
