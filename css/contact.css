@@ -2,7 +2,7 @@
 footer {
     position: relative;
     color: white;
-    margin-top: calc(var(--base) * 1.2);
+    margin-top: calc(var(--base) * 1.4);
     width: 100%;
 }
 
@@ -15,15 +15,14 @@ footer h1.section-title {
     text-transform: uppercase; 
     justify-content: center;
     align-items: center;
+    margin-top: 110px;
     left: 0;
 }
-
-
-
 contact {
     padding-top: 8vh;
     padding-bottom: 5vh;
-    height: 420px;
+    min-height: 420px;
+    margin-bottom: 30px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -31,29 +30,6 @@ contact {
     background: linear-gradient(to right, black, rgba(0, 0, 0, .2) 80%, transparent), url('../img/contact-image.jpg') no-repeat top right;
 }
 
-@media (max-width: 1440px) {
-    footer h1.section-title {
-        font-size: 7vw;
-    }
-
-    contact {
-        background-position: top right;
-    }
-
-    contact form {
-        width: 60vw;
-    }
-
-}
-
-@media (max-width: 1200px) {
-    footer contact form {
-        margin-left: 50px;
-    }
-    footer contact form p {
-        font-size: calc(var(--base) / 6);
-    }
-}
 contact form {
     margin-left: 100px;
     max-width: calc(var(--base) * 5);
@@ -139,6 +115,7 @@ form input:focus {
 
 .copyright {
     margin-left: 100px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -212,4 +189,70 @@ li a i {
     cursor: var(--cursor-dark-hover);
     padding: 30px 0 20px;
 
+}
+
+
+@media (max-width: 1440px) {
+    footer h1.section-title {
+        font-size: 7vw;
+    }
+
+    contact {
+        background-position: top right;
+    }
+
+    contact form {
+        width: 60vw;
+    }
+
+}
+
+
+@media (max-width: 1200px) {
+    footer contact form {
+        margin-left: 50px;
+    }
+    footer contact form p {
+        font-size: calc(var(--base) / 6);
+    }
+}
+
+@media (max-width: 1100px) {
+    contact {
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right, black, rgba(0, 0, 0, .5) 80%, transparent), url('../img/contact-image.jpg') no-repeat top right;
+
+    }
+}
+
+@media (max-width: 1024px) {
+    footer contact form p {
+        font-size: calc(var(--base) / 7);
+    }  
+    form input {
+        box-sizing: border-box;
+        width: 200px;
+    } 
+    input[type=email] {
+        box-sizing: border-box;
+        width: 250px;
+    }
+    ::-webkit-input-placeholder {
+        color: #666;
+        font-size: 16px;
+    }
+    
+    :-ms-input-placeholder {
+        color: #666;
+        font-size: 16px;
+    }
+    
+    ::placeholder {
+        color: #666;
+        font-size: 16px;
+    }
+    .form-btn {
+        margin-top: 16px;
+    }
 }
