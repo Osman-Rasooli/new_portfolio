@@ -10,6 +10,9 @@
 	font-family: montsera;
 	src: url('../fonts/Montsera-Rp38l.ttf');
 }
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	background-color: black;
