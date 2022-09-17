@@ -1,83 +1,58 @@
 
-slide-wrapper {
-    overflow: hidden;
-    height: 100vh;
-    display: flex;
-    position: relative;
-    background: #f2f2f2;
-    color: black;
-    bottom: 0;
-
-}
-
-horizontal-slide {
-    width: 100vh;
-    height: 100vw;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transform-origin: right top;
-    transform: rotate(-90deg) translate3d(0, -100vh, 0);
-    position: relative;
-    /* background-color: red; */
-}
-
 bg-image{
     position: absolute;
-    top: 3vh;
+    top: 0;
     left: 0;
-    width: 98vw;
-    height: 97vh;
+    width: 100vw;
+    height: 100vh;
     background: url(../img/osman.jpg) no-repeat top/cover;
     background-blend-mode: darken(2);
     clip-path: circle(120px at var(--x) var(--y));
+    z-index: 0;
 }
 
-
-slide-item {
-    width: max-content;
+.about-me {
+    width: 100%;
     height: 100vh;
-    transform-origin: left top;
-    transform: rotate(90deg) translate3d(0, -100vh, 0) scale(1);
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: sticky;
-    /* font-size: calc(var(--base) / 3); */
-    font-size: 5vw;
-    font-weight: bold;
-    letter-spacing: -0.1ch;
-    /* background-color: blueviolet; */
+    align-items: center;
+    padding-top: 30px;
+    position: relative;
+}
+.about-me div {
+    /* max-width: 70%; */
+    align-items: center;
 }
 
-[s0] { 
-    top: 30vh; 
-background-color: red;
-margin: 0  ;}
+.about-me h1,
+.about-me h2, 
+.about-me p {
+    position: relative;
+    margin: 50px;
+    z-index: 10;
+}
 
-[s1] { 
-    background: linear-gradient(to right, transparent, #f2f2f2 40%);
-    margin-top: 100vh;
-    width: 190vh;
-    backdrop-filter: blur(10px);
-    /* background-color: beige; */
- }
-
- [s2] {
-    /* background-color: blue; */
- }
-
-@media (max-width: 1440px) {
-    horizontal-slide {
-        height: 130vw;
-    }
+.about-me-name {
+    text-align: center;
+    font-size: 8vw;
 }
 
 
-slide-item p {
+.about-me p {
     width: 80vw;
     margin: 0 auto;
     letter-spacing: .15ch;
     line-height: 1.2;
+    font-size: 2.5vw;
+}
+
+.about-me h2 {
+    font-size: 3.5vw;
+}
+
+.about-me svg {
+    display: none;
 }
 
 span.aboutMe {
@@ -89,9 +64,21 @@ span.aboutMe {
     cursor: var(--cursor-dark-hover);
 }
 
-horizontal-slide::-webkit-scrollbar {
-    appearance: none;
+@media (max-width: 800px) {
+    .about-me p {
+        font-size: 4vw;
+        line-height: 1.4;
+    }
+    .about-me h1 {
+        font-size: 10vw;
+    }
+    .about-me h2 {
+        font-size: 5vw;
+        font-weight: bold;
+    }
 }
+
+
 
 /* LIQUID BUTTON */
 
@@ -100,7 +87,7 @@ horizontal-slide::-webkit-scrollbar {
       position: relative;
       width: 150px;
       height: 150px;
-      margin: 40px auto 0;
+      margin: 40px auto;
       cursor: var(--cursor-dark-hover);
 }
 
@@ -173,8 +160,8 @@ horizontal-slide::-webkit-scrollbar {
     transition: .8s cubic-bezier(0,2,.61,-0.05);
 }
 .button:hover .blurred::before{
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     top: 50%;
     left: 50%;
 }

@@ -9,13 +9,13 @@ footer {
 footer h1.section-title {
     display: flex;
     width: 100%;
-    font-size: calc(var(--base) * 0.5);
+    font-size: calc(var(--base) * 0.6);
     color: rgba(255, 255, 255, .25);
     letter-spacing: .7ch;
     text-transform: uppercase; 
     justify-content: center;
     align-items: center;
-    margin-top: 130px;
+    margin-top: 80px;
     left: 0;
 }
 contact {
@@ -264,6 +264,9 @@ li a i {
 }
 
 @media (max-width: 1024px) {
+    footer h1.section-title {
+        margin-top: 150px;
+    }
     footer contact form p {
         font-size: calc(var(--base) / 7);
     }  

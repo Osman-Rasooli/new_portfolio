@@ -10,7 +10,7 @@
     <script src="load.js"></script>
 </head>
 <body>
-    <section id="preloader">
+    <section  id="preloader">
         <div class="preloader"></div>
         <div class="count"></div>
     </section>
@@ -26,50 +26,39 @@
     <section  style="height: 400px;"></section>
     <main >
         <!-- The designer of your success -->
-        <bg-white  class="aboutme">
-            <slide-wrapper>
-                <bg-image></bg-image>
-                <horizontal-slide >
-                    <slide-item s0>
-                        <div style="width: 100vw;   -webkit-text-stroke: 1px white; ">
-                            <h1>Osman Rasooli</h1>
-                            <h2 class="mix-text-sm">The designer of you success...</h2>
+        <bg-white class="about-me">
+            <bg-image></bg-image>
+            <div style="-webkit-text-stroke: 1px white; ">
+                <h1 class="about-me-name">Osman Rasooli</h1>
+                <h2 class="mix-text-sm">The designer of your success...</h2>
+                <p style="text-align: center;" class="mix-text-sm">a professional Web Developer with <span class="aboutMe cursor-white">UI / UX</span> and <span class="aboutMe">back-end</span> development skills to create delightful experience.
+                    <a href="./assets/Resume.pdf" target="_blank" download="Resume" class="download-link">
+                        <div class="button">
+                            <span class="i">Resume
+                                <i class="fa-solid fa-download download-icon" ></i>
+                            </span>
+                            <div class="blurred">
+                                <span></span>
+                                <span></span>
+                            </div>
                         </div>
-                    </slide-item>
-                    <slide-item s1></slide-item>
-                    <slide-item s2>
-                        <div style="width: 100vw;">
-                            <p style="text-align: center;" class="mix-text-sm">a professional Web Developer with <span class="aboutMe cursor-white">UI / UX</span> and <span class="aboutMe">back-end</span> development skills to create delightful experience.
-                                <a href="./assets/Resume.pdf" target="_blank" download="Resume" class="download-link">
-                                    <div class="button">
-                                        <span class="i">Resume
-                                            <i class="fa-solid fa-download download-icon" ></i>
-                                        </span>
-                                        <div class="blurred">
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <svg>
-                                    <defs>
-                                     <filter id='goo'>
-                                      <feGaussianBlur in='SourceGraphic' 
-                                      stdDeviation='10' result='name'/>
-                                       <feColorMatrix in='name' mode='matrix'
-                                           values='1 0 0 0 0
-                                                   0 1 0 0 0 
-                                                   0 0 1 0 0
-                                                   0 0 0 30 -15 ' result='aab'/>
-                                       <feBlend in='SourceGraphic' in2='aab'/>
-                                      </filter>
-                                    </defs>
-                                </svg>
-                            </p>
-                        </div>
-                    </slide-item>
-                </horizontal-slide>
-            </slide-wrapper>
+                    </a>
+                    <svg>
+                        <defs>
+                         <filter id='goo'>
+                          <feGaussianBlur in='SourceGraphic' 
+                          stdDeviation='10' result='name'/>
+                           <feColorMatrix in='name' mode='matrix'
+                               values='1 0 0 0 0
+                                       0 1 0 0 0 
+                                       0 0 1 0 0
+                                       0 0 0 30 -15 ' result='aab'/>
+                           <feBlend in='SourceGraphic' in2='aab'/>
+                          </filter>
+                        </defs>
+                    </svg>
+                </p>
+            </div>
         </bg-white>
 
         <stick-list >
