@@ -265,7 +265,7 @@ li a i {
 
 @media (max-width: 1024px) {
     footer h1.section-title {
-        margin-top: 150px;
+        margin-top: 50px;
     }
     footer contact form p {
         font-size: calc(var(--base) / 7);
