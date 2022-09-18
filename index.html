@@ -10,7 +10,7 @@
     <script src="load.js"></script>
 </head>
 <body>
-    <section hidden id="preloader">
+    <section  id="preloader">
         <div class="preloader"></div>
         <div class="count"></div>
     </section>
@@ -19,7 +19,7 @@
 
     <!-- <header>Osman Rasooli</header> -->
     <css-mix >
-        <mix-text style="text-align: center">Osman Rasooli <div class="mix-text-sm">a full stack web developer</div></mix-text>
+        <mix-text class="landingPage-name" style="text-align: center">Osman Rasooli <div class="mix-text-sm">a full stack web developer</div></mix-text>
        <mix-bg></mix-bg>
     </css-mix>
     <section  style="height: 400px;"></section>
@@ -166,11 +166,11 @@
                 </gallery-desc>
             </gallery-item>
             <gallery-item cursor g3>
-                <img src="./img/gallery-1.jpeg" alt="Image 3">
+                <img src="./img/port-old.png" alt="Old Portfolio">
                 <gallery-desc>
-                    <h1>Pizza Delivery App</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum similique pariatur est voluptatum amet. Nam fugit itaque delectus animi officia.</p>
-                    <p><span>HTML</span><span>CSS</span><span>SASS</span><span>JS</span></p>
+                    <h1>OLD PORTFOLIO</h1>
+                    <p>My first project, created using web fundamentals and advanced animations. It is also fully-responsive.</p>
+                    <p><span>HTML</span><span>CSS</span><span>JS</span><span>JQUERY</span></p>
                     <p class="links-container"><a href="#"><i class="fa-solid fa-eye"></i>Visit</a><a href="#"><i class="fa-brands fa-github"></i>Code</a></p>
                 </gallery-desc>
             </gallery-item>
@@ -181,8 +181,8 @@
         <h1 class="section-title">Contact Me</h1>
         <contact>
             <form id="contact">
-                <p>Hey, My name is <input type="text" name="name" id="name" placeholder="John Doe"> and I'm looking for <input type="text" name="subject" id="subject" placeholder="Web Design"><br/>
-                    Get in touch with me at <input type="email" name="email" id="email" placeholder="john@example.com">
+                <p>Hey, My name is <input type="text" name="name" id="name" required placeholder="John Doe"> and I'm looking for <input type="text" required name="subject" id="subject" placeholder="Web Design"><br/>
+                    Get in touch with me at <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required name="email" id="email" placeholder="john@example.com">
                 </p>
                 <button class="form-btn" type="submit"  data-title="Hire Me">Send Inquiry</button>
             </form>

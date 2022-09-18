@@ -20,7 +20,7 @@ $(function() {
             count++;
         } else {
             clearInterval(counter);
-            $('#preloader').fadeOut(1500);
+            $('#preloader').slideUp(1500);
             $('.preloader').css('display', 'none');
             $('.count').css('display', 'none');
             $('body').toggleClass('preolaoder-scroll');
