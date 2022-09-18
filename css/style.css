@@ -6,10 +6,10 @@
 @import "gallery.css";
 @import "contact.css";
 
-@font-face {
+/* @font-face {
 	font-family: montsera;
 	src: url('../fonts/Montsera-Rp38l.ttf');
-}
+} */
 html {
 	scroll-behavior: smooth;
 }
@@ -163,7 +163,20 @@ bg-black {
 	}
 }
 
-/* .hire-me:hover::before {
-	transform: scale(2);
+/* Contact Form Popup */
+
+.overlay {
+	background-color: #ff3d77;
+	color: black;
+	font-size: 20px;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, .3);
+	padding: 15px 30px;
+	border-radius: 5px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all .5s;
+	visibility: hidden;
 	opacity: 0;
-} */
+}

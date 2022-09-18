@@ -83,6 +83,7 @@ form input:focus {
     display: inline-block;
     color: #e3e3e3;
     padding: 20px 40px;
+    background-color: #000;
     font-size: 20px;
     letter-spacing: 5px;
     font-weight: bold;

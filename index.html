@@ -15,9 +15,8 @@
         <div class="count"></div>
     </section>
 
-    <a href="#contact" class="hire-me"><i class="fa-solid fa-phone"></i></a>
+    <a href="#contact" title="contact me - hire me" class="hire-me"><i class="fa-solid fa-phone"></i></a>
 
-    <div hidden class="header">Osman Rasooli</div>
     <!-- <header>Osman Rasooli</header> -->
     <css-mix >
         <mix-text style="text-align: center">Osman Rasooli <div class="mix-text-sm">a full stack web developer</div></mix-text>
@@ -180,11 +179,11 @@
     <footer >
         <h1 class="section-title">Contact Me</h1>
         <contact>
-            <form action="#" id="contact">
+            <form id="contact">
                 <p>Hey, My name is <input type="text" name="name" id="name" placeholder="John Doe"> and I'm looking for <input type="text" name="subject" id="subject" placeholder="Web Design"><br/>
                     Get in touch with me at <input type="email" name="email" id="email" placeholder="john@example.com">
                 </p>
-                <a class="form-btn" href="#" data-title="Hire Me">Send Inquiry</a>
+                <button class="form-btn" type="submit"  data-title="Hire Me">Send Inquiry</button>
             </form>
         </contact>
         <div class="copyright">
@@ -209,6 +208,11 @@
                 </li>
             </ul>
             <p>&copy; 2022, Built and designed by <a href="index.html" class="copyright-name">Osman Rasooli</a></p>
+        </div>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <p>Message Delivered!</p>
+            </div>
         </div>
     </footer>
 
