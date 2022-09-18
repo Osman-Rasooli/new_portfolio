@@ -6,10 +6,10 @@
 @import "gallery.css";
 @import "contact.css";
 
-/* @font-face {
-	font-family: montsera;
-	src: url('../fonts/Montsera-Rp38l.ttf');
-} */
+@font-face {
+	font-family: neuro;
+	src: url('../fonts/neuropolitical\ rg.ttf');
+}
 html {
 	scroll-behavior: smooth;
 }

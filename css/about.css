@@ -29,15 +29,27 @@ bg-image{
 .about-me h2, 
 .about-me p {
     position: relative;
-    margin: 50px;
+    margin: 30px;
     z-index: 10;
 }
 
 .about-me-name {
     text-align: center;
     font-size: 8vw;
+    font-family: neuro, sans-serif;
+    /* font-weight: bold; */
 }
 
+.about-small {
+    display: inline-block;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
 
 .about-me p {
     width: 80vw;
