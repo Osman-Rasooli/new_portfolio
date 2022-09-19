@@ -1,7 +1,7 @@
 var beforeload = (new Date()).getTime();
 
 // Preloader
-$(function() {
+$(document).ready(function() {
     var count = 0;
     $('body').toggleClass('preolaoder-scroll');
     // var loadTime = window.performance.timing.domContentLoadedEventEnd- window.performance.timing.navigationStart;
