@@ -153,6 +153,10 @@ bg-black {
 	animation: hire-me 1s infinite;
 }
 
+.hire-me:active {
+	outline: none;
+}
+
 @keyframes hire-me {
 	0% {
 		transform: scale(1);
