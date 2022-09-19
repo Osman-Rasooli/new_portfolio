@@ -187,5 +187,8 @@ stick-text {
     .logo-container span {
         padding: 8px 15px;
     }
+    stick-item {
+        padding-left: 10px;
+    }
 }
 
