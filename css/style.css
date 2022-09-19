@@ -22,6 +22,7 @@ body {
 	line-height: 1;
 	overflow: overlay;
 	position: relative;
+	box-sizing: border-box;
 }
 
 .preolaoder-scroll {

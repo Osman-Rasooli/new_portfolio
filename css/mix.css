@@ -60,6 +60,7 @@ css-mix {
     }
   }
   
+  
   mix-bg {
     grid-area: center;
     width: calc(var(--base));

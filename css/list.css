@@ -159,6 +159,15 @@ stick-text {
     }
 }
 
+@media (max-width:450px) {
+    stick-list {
+
+        max-width: 95vw;
+        margin: calc(var(--base)) 0 0 0;
+        /* padding-left: 10px; */
+    }
+}
+
 @media (max-width: 425px) {
     stick-letter {
         display: none;
@@ -171,7 +180,12 @@ stick-text {
 
     stick-list {
         max-width: 100vw;
-        margin-left: 0;
+    }
+    .logo-container span:not(:last-child) {
+        margin-right: 10px;
+    }
+    .logo-container span {
+        padding: 8px 15px;
     }
 }
 

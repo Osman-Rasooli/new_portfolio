@@ -362,3 +362,9 @@ li a i {
     }
 
 }
+
+@media (max-width:500px) {
+    .copyright {
+        max-width: 100%;
+    }
+}
