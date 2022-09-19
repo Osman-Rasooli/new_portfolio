@@ -3,7 +3,8 @@ section.projects {
     height: 200px;
 }
 section.projects h1 {
-    font-size: calc(var(--base) * .8);
+    /* font-size: calc(var(--base) * .8); */
+    font-size: 8vw;
     color: rgba(255, 255, 255, .25);
     letter-spacing: .7ch;
     text-transform: uppercase;

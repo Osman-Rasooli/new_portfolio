@@ -63,11 +63,13 @@ css-mix {
   
   mix-bg {
     grid-area: center;
-    width: calc(var(--base));
+    /* width: calc(var(--base)); */
+    width: 50%;
     height: 100%;
     flex: 1;
     justify-self: center;
-    transform: rotate(30deg) translateX(-1ch);
+    /* transform: rotate(30deg) translateX(-1ch); */
+    transform: rotate(15deg) translateX(-1ch);
     pointer-events: none;
     mix-blend-mode: overlay;
     top: 0;

@@ -48,7 +48,8 @@ stick-content {
 
 stick-title {
     font-weight: bold;
-    font-size: calc(var(--base) * 0.8);
+    /* font-size: calc(var(--base) * 0.8); */
+    font-size: 9vw;
 }
 
 stick-text {

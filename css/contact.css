@@ -9,7 +9,8 @@ footer {
 footer h1.section-title {
     display: flex;
     width: 100%;
-    font-size: calc(var(--base) * 0.6);
+    /* font-size: calc(var(--base) * 0.6); */
+    font-size: 8vw;
     color: rgba(255, 255, 255, .25);
     letter-spacing: .7ch;
     text-transform: uppercase; 
