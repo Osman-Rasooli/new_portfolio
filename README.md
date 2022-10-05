@@ -1,9 +1,29 @@
+<br />
+<br />
 
-# New Modern Portfolio
+<h1 align="center" >Personal Portfolio</h1>
+<hr>
+<h2 align="center">Using modern web technologies and beautiful animations</h2>
 
-## A brand new portfolio with beautiful UI/UX and animations
+<br />
+<br />
 
-### It is created using modern features of CSS like clip-path, aspect-ratio and many more.
+<p align="center">
+  <img src="./img/screenshots/screenshot1.png">
+  <br />
+  <hr>
+  <br />
+  <img src="./img/screenshots/screenshot2.png">
+</p>
 
-### CURRENTLY IN DEVELOPMENT!
+## It is designed and developed using modern css features like clip-path, aspect-ratio and many more.
+
+## ✨ Tech Stack
+- HTML
+- CSS
+- JS
+- JQuery
+- Animate.css
+- FormSubmit - Ajax API
+
 
