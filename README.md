@@ -2,7 +2,7 @@
 <br />
 
 <h1 align="center" >Personal Portfolio</h1>
-<a href="https://osman-rasooli.github.io/new_portfolio/" target="_blank" >View Portfolio</a>
+<p align="center"><a href="https://osman-rasooli.github.io/new_portfolio/" target="_blank" >💻 View Portfolio</a></p>
 <hr>
 <h2 align="center">Using modern web technologies and beautiful animations</h2>
 
